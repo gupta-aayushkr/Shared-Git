@@ -1,0 +1,31 @@
+/* Reset and box-sizing */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 1400px;
+    margin: 20px auto;
+}
+
+/* Box */
+.container .box {
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); /* Adjusts to fit 3 boxes per row */
+    float: left;
+    margin-right: 20px;
+}
+
+.container .box:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Images */
+.container .box img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
