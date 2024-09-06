@@ -22,8 +22,8 @@ def combine_pdfs(pdf_files, output_file):
     merger.close()
 
 if __name__ == "__main__":
-    png_folder = f"/Users/aayushgupta/Desktop/DP-900/pages/Images/251-304/"
-    output_folder = "/Users/aayushgupta/Desktop/DP-900/pages/temp/"
+    png_folder = f"/Users/aayushgupta/Desktop/Shared Git/Worked/DP-900/Apache Spark"
+    output_folder = "/Users/aayushgupta/Desktop/Shared Git/Worked/DP-900/output"
 
     # Create output directory if it doesn't exist
     if not os.path.exists(output_folder):
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         pdf_files.append(pdf_file)
 
     # Combine PDF files
-    output_pdf = f"/Users/aayushgupta/Desktop/DP-900/pages/251-304.pdf"
+    output_pdf = f"/Users/aayushgupta/Desktop/Shared Git/Worked/DP-900/output.pdf"
     combine_pdfs(pdf_files, output_pdf)
 
     # Clean up intermediate PDF files
